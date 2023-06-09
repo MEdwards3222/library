@@ -18,3 +18,14 @@ main {
 .navbar-brand {
     margin-left: 1rem;
 }
+
+#table-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#table {
+    margin-top: 1rem;
+}

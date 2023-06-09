@@ -1,9 +1,13 @@
 let myLibrary = [];
+let libraryMap = new Map();
 
-function Book() {
-
-}
+const book = {
+    author: "",
+    title: "",
+    pages: 0,
+    isRead: false
+};
 
 function addBooktoLibrary() {
-    
+
 }
