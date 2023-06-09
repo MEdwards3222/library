@@ -1,0 +1,20 @@
+main {
+    display: grid;
+    
+}
+
+.row {
+    border: 1px solid lightgray;
+}
+
+.col-sm {
+    border: 1px solid lightgray;
+}
+
+.navbar.navbar-light {
+    background-color: #a8a29e;
+}
+
+.navbar-brand {
+    margin-left: 1rem;
+}
