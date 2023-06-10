@@ -10,9 +10,9 @@ let colsm = tableDiv.classList.add('col-sm'); */
 let myLibrary = []; //original spec of project - aiming to do this with hashmap instead
 let libraryMap = new Map();
 
-function Book(author, title, pages, genre, isRead) {
-    this.author = author;
+function Book(title, author, pages, genre, isRead) {
     this.title = title;
+    this.author = author;
     this.pages = pages;
     this.genre = genre;
     this.isRead = isRead;
@@ -30,16 +30,21 @@ function displayLibraryTable() { //displays library table - may scrap - early ve
     
 }
 
-function addTableRow() {
+
+function addTableRow(Book) {
+    let tableBook = Book;
     let rowDiv = document.createElement('div');
-    let numCols = 3;
+    let attribute = [tableBook.title, tableBook.author, tableBook.pages, tableBook.genre, tableBook.isRead];
+    let numCols = attribute.length;
     
     rowDiv.classList.add("row");
     
     for(let i = 0; i < numCols; i++){
         let colDiv = document.createElement('div');
         colDiv.classList.add("col-sm");
-        colDiv.textContent = "Test";
+
+
+        colDiv.textContent = attribute[i];
         rowDiv.appendChild(colDiv);
     }
     
@@ -47,4 +52,4 @@ function addTableRow() {
 
 }
 
-addTableRow();
+addTableRow(book1);
