@@ -19,6 +19,10 @@ main {
     margin-left: 1rem;
 }
 
+.navbar-text {
+    margin-right: 1rem;
+}
+
 #table-buttons {
     display: flex;
     justify-content: center;
