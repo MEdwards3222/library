@@ -33,3 +33,7 @@ main {
 #first-row {
     background-color: #d6d3d1;
 }
+
+#book-title, #book-author, #book-pages, #book-genre, #book-read {
+    border: 2px solid #d1d5db;
+}

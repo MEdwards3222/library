@@ -50,10 +50,59 @@
     </main>
 
     <div class="container" id="table-buttons">
-        <button class="btn btn-primary" id="add-book">Add book</button>
+        <button type="button" class="btn btn-primary" id="add-book-btn" data-bs-toggle="modal" data-bs-target="#add-book-modal">Add book</button>
         <button class="btn btn-primary" id="remove-book">Remove book</button>
     </div>
 
+    <!-- Add button modal -->
+    <div class="modal fade" id="add-book-modal" tabindex="-1" role="dialog" aria-labelledby="add-book-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="add-book-modal">Add Book</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="book-title" class="col-form-label">Title</label>
+                            <input type="text" class="form-control" id="book-title">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="book-author" class="col-form-label">Author</label>
+                            <input type="text" class="form-control" id="book-author">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="book-pages" class="col-form-label">Pages</label>
+                            <input type="text" class="form-control" id="book-pages">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="book-genre" class="col-form-label">Genre</label>
+                            <input type="text" class="form-control" id="book-genre">
+                        </div>
+
+                        <div class="form-group form-check">
+                            <label for="book-read" class="form-check-label">Read book</label>
+                            <input type="checkbox" class="form-check-input" id="book-read">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add book</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./script.js"></script>
+    
 </body>
 </html>
