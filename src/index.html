@@ -45,13 +45,14 @@
             <div class="col-sm">Pages</div>
             <div class="col-sm">Genre</div>
             <div class="col-sm">Read</div>
+            <div class="col-sm">Delete Book</div>
         </div>
 
     </main>
 
     <div class="container" id="table-buttons">
         <button type="button" class="btn btn-primary" id="add-book-btn" data-bs-toggle="modal" data-bs-target="#add-book-modal">Add book</button>
-        <button class="btn btn-primary" id="remove-book">Remove book</button>
+        
     </div>
 
     <!-- Add button modal -->
@@ -69,34 +70,34 @@
                     <form action="#">
                         <div class="form-group">
                             <label for="book-title" class="col-form-label">Title</label>
-                            <input type="text" class="form-control" id="book-title">
+                            <input type="text" class="form-control" id="book-title" name="book-title" placeholder="The Hobbit">
                         </div>
 
                         <div class="form-group">
                             <label for="book-author" class="col-form-label">Author</label>
-                            <input type="text" class="form-control" id="book-author">
+                            <input type="text" class="form-control" id="book-author" name="book-author" placeholder="J.R.R Tolkien">
                         </div>
 
                         <div class="form-group">
                             <label for="book-pages" class="col-form-label">Pages</label>
-                            <input type="text" class="form-control" id="book-pages">
+                            <input type="number" class="form-control" id="book-pages" name="book-pages" placeholder="366">
                         </div>
 
                         <div class="form-group">
                             <label for="book-genre" class="col-form-label">Genre</label>
-                            <input type="text" class="form-control" id="book-genre">
+                            <input type="text" class="form-control" id="book-genre" name="book-genre" placeholder="Fantasy">
                         </div>
 
                         <div class="form-group form-check">
-                            <label for="book-read" class="form-check-label">Read book</label>
-                            <input type="checkbox" class="form-check-input" id="book-read">
+                            <label for="book-read" class="form-check-label">Checkmark this if you read this book</label>
+                            <input type="checkbox" class="form-check-input" id="book-read" name="book-read">
                         </div>
                     </form>
                 </div>
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Add book</button>
+                    <button type="submit" class="btn btn-primary" id="book-submit" data-bs-dismiss="modal">Add book</button>
                 </div>
             </div>
         </div>
