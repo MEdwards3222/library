@@ -5,8 +5,6 @@ let addBookBtn = document.getElementById("add-book");
 let delBookBtn = document.getElementById("remove-book");
 let submitBookBtn = document.getElementById("book-submit");
 
-/* let row = tableDiv.classList.add('row');
-let colsm = tableDiv.classList.add('col-sm'); */
 
 let myLibrary = []; //original spec of project - aiming to do this with hashmap instead
 let libraryMap = new Map();
@@ -23,7 +21,7 @@ let book1 = new Book("The Hobbit", "J.R.R Tolkien", 366, "Fantasy", true);
 
 libraryMap.set(book1.title, book1);
 
-/* console.log("Map Iterator: " + libraryMap.values()); */
+
 
 
 function mapIterator(map) {
@@ -66,12 +64,9 @@ function addBooktoLibrary() { //takes user input and creates a new Book object w
     let formBook = new Book(formTitle.value, formAuthor.value, formPages.value, formGenre.value, boolRead);
     libraryMap.set(formBook.title, formBook);
     
-    /* addTableRow(formBook); */
     removeTable();
     mapIterator(libraryMap);
     console.log(event.target);
-    
-    
     
     //disable default behavior
     Event.preventDefault;
