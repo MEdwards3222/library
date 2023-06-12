@@ -77,10 +77,6 @@ function addBooktoLibrary() { //takes user input and creates a new Book object w
     Event.preventDefault;
 }
 
-function displayLibraryTable() { //displays library table - may scrap - early versions of program will not have this and this will be developed late
-    
-}
-
 
 function addTableRow(Book) {
     let tableBook = Book;
